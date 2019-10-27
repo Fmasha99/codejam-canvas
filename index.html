@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel='stylesheet' href='style.css'>
+    <script type="text/javascript" src="script.js"></script>
+    <title>CodeJam - Canvas</title>
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="appBar">
+                <img src="./assets/icons/Shape.png" alt="appBar">
+            </div>
+            <div class="title-text">
+                CodeJam - Pallete
+            </div>
+            <div class="menu">
+                <img src="./assets/icons/Menu.png" alt="menu">
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="main-container">
+            <div class="main-container-box">
+                <div class="bottom-list">
+                    <div class="bottom-list__item">
+                        <div class="bottom-icon">
+                            <img src="./assets/icons/Vector.png" alt="Paint bucket">
+                        </div>
+                        <div class="bottom-text">
+                            Paint bucket
+                        </div>
+                    </div>
+                    <div class="bottom-list__item">
+                        <div class="bottom-icon">
+                            <img src="./assets/icons/Vector2.png" alt="Choose color">
+                        </div>
+                        <div class="bottom-text">
+                            Choose color
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="bottom-list__item">
+                        <div class="bottom-icon">
+                            <img src="./assets/icons/Vector3.png" alt="Move">
+                        </div>
+                        <div class="bottom-text">
+                            Move
+                        </div>
+                    </div>
+                    <div class="bottom-list__item">
+                        <div class="bottom-icon">
+                            <img src="./assets/icons/Vector4.png" alt="Transform">
+                        </div>
+                        <div class="bottom-text">
+                            Transform
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="color-list">
+                    <div class="color-list__item">
+                        <div class="color-icon">
+                            <img src="./assets/icons/GreyEllipse.png" alt="Grey">
+                        </div>
+                        <div class="color-text">
+                            Current color
+                        </div>
+                    </div>
+                    <div class="color-list__item">
+                        <div class="color-icon">
+                            <img src="./assets/icons/GreenEllipse.png" alt="Green">
+                        </div>
+                        <div class="color-text">
+                            Prev color
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="color-list__item">
+                        <div class="color-icon">
+                            <img src="./assets/icons/RedEllipse.png" alt="Red">
+                        </div>
+                        <div class="color-text">
+                            Red
+                        </div>
+                    </div>
+                    <div class="color-list__item">
+                        <div class="color-icon">
+                            <img src="./assets/icons/BlueEllipse.png" alt="Blue">
+                        </div>
+                        <div class="color-text">
+                            Blue
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="images-container">
+                <canvas id="canvas">
+                    Hello
+                </canvas>
+                <div>
+                    <img src="./assets/image.png" style="display: none;" id="thirdImage">
+                </div>
+            </div>
+            <div class="switch">
+                <div class="switch-item">
+                    <button onclick='changeImage()' id="clickImage1">
+                        4 х 4
+                    </button>
+                </div>
+                <div class="switch-item" >
+                    <button onclick='changeImage()' id="clickImage2">
+                        32 х 32
+                    </button>
+                </div>
+                <div class="switch-item">
+                    <button onclick='changeImage()' id="clickImage3">
+                        512 х 512
+                    </button>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

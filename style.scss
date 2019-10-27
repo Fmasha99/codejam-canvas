@@ -1,0 +1,142 @@
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+
+    header {
+        display: flex;
+        height: 48px;
+        box-shadow: 0px 3px 5px grey;
+        
+        .header-container {
+            display: flex;
+            padding-top: 3px;
+            align-items: center;
+
+            .appBar {
+                padding-left: 30px;
+            }
+
+            .title-text {
+                padding-left: 24px;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 20px;
+                line-height: 23px;
+            }
+            .menu {
+                padding-left: 1177px;
+            }
+        }
+    }
+
+    main {
+        display: flex;
+
+        .main-container {
+            display: flex;
+            padding-top: 79px;
+            padding-left: 29px;
+            
+            .main-container-box {
+                display: block;
+            
+
+                .bottom-list {
+                    align-content: space-around;
+                    border: 2px black;
+                    width: 228px;
+                    height: 246px;
+                    box-shadow: 0px 3px 15px black;
+                
+                    .bottom-list__item {
+                    display: flex;
+                    align-content: space-around;
+                    padding-top: 4.88%;
+                    padding-left: 7.89%;
+                    height: 48px;
+                    width: 196px;
+
+                        .bottom-icon {
+                            align-content: space-around;
+                        }
+
+                        .bottom-text {
+                            align-content: space-around;
+                            justify-content: center;
+                            font-style: normal;
+                            font-weight: normal;
+                            font-size: 16px;
+                            line-height: 24px;
+                            color: rgba(0, 0, 0, 0.541327);
+                            padding-left: 33px;
+                            
+                        }
+                    }
+                }
+
+                .color-list {
+                    align-content: space-around;
+                    border: 2px black;
+                    width: 228px;
+                    height: 246px;
+                    box-shadow: 0px 3px 15px black;
+                    margin-top: 92px;
+
+                    .color-list__item {
+                    display: flex;
+                    align-content: space-around;
+                    padding-top: 4.88%;
+                    padding-left: 7.89%;
+                    height: 48px;
+                    width: 196px;
+
+                        .color-icon {
+                            align-content: space-around;
+                        }
+
+                        .color-text {
+                            align-content: space-around;
+                            justify-content: center;
+                            font-style: normal;
+                            font-weight: normal;
+                            font-size: 16px;
+                            line-height: 24px;
+                            color: rgba(0, 0, 0, 0.541327);
+                            padding-left: 33px;
+                            
+                        }
+                    }
+                }
+            }
+
+            .images-container {
+                height: 512px;
+                width: 512px;
+                margin-left: 487px;
+            }
+
+            .switch {
+                border: 2px black;
+                width: 90px;
+                height: 90px;
+                box-shadow: 0px 3px 15px black;
+                align-content: space-around;
+                margin-left: 50px;
+                margin-top: 150px;
+                justify-content: center;
+                padding-left: 10px;
+
+                .switch-item {
+                    justify-content: center;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 16px;
+                    line-height: 24px;
+                    color: rgba(0, 0, 0, 0.541327);
+
+                }
+            }
+        }
+    }
+}
