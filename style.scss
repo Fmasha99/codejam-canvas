@@ -72,6 +72,9 @@ body {
                             padding-left: 33px;
                             
                         }
+                        &:hover {
+                            cursor: pointer;
+                        }
                     }
                 }
 
@@ -106,17 +109,47 @@ body {
                             padding-left: 33px;
                             
                         }
+                        &:hover {
+                            cursor: pointer;
+                        }
                     }
                 }
             }
 
-            .images-container {
-                height: 512px;
-                width: 512px;
-                margin-left: 487px;
+            .size-switcher {
+                padding-left: 16px;
+                margin-bottom: 8px;
+                width: 100%;
+                height: 48px;
+                display: flex;
+                align-items: center;
+                box-sizing: border-box;
+                cursor: pointer;
+              }
+
+            .image {
+                display: none;
+            } 
+
+            .image_down {
+                display: none;
             }
 
-            .switch {
+            .canvas-container {
+                width: fit-content;
+                height: 100%;
+                display: flex;
+                justify-content: flex-end;
+              }
+              
+              .canvas {
+                width: 512px;
+                height: 512px;
+                margin: 29px 0 0 500px;
+                background-color: lightgrey;
+              }
+
+            .size-switcher-container {
                 border: 2px black;
                 width: 90px;
                 height: 90px;
@@ -126,15 +159,26 @@ body {
                 margin-top: 150px;
                 justify-content: center;
                 padding-left: 10px;
+            }
 
-                .switch-item {
-                    justify-content: center;
-                    font-style: normal;
-                    font-weight: normal;
-                    font-size: 16px;
-                    line-height: 24px;
-                    color: rgba(0, 0, 0, 0.541327);
+            .sheet {
+                margin: 188px 0 0 0;
+            }
 
+            .sheet ul li {
+                display: flex;
+                justify-content: center;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 16px;
+                line-height: 24px;
+                color: rgba(0, 0, 0, 0.541327);
+                .size-switcher__icon {
+                    width: 15px;
+                }
+                &:hover {
+                    background: khaki;
+                    cursor: pointer;
                 }
             }
         }
