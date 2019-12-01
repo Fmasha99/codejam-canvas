@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel='stylesheet' href='style.css'>
+    <title>CodeJam - Canvas</title>
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="appBar">
+                <img src="./assets/icons/Shape.png" alt="appBar">
+            </div>
+            <div class="title-text">
+                CodeJam - Pallete
+            </div>
+            <div class="menu">
+                <img src="./assets/icons/Menu.png" alt="menu">
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="main-container">
+            <div class="main-container-box">
+                <div class="bottom-list">
+                    <div class="bottom-list__item">
+                        <div class="bottom-icon">
+                            <img src="./assets/icons/Vector.png" alt="Paint bucket">
+                        </div>
+                        <div class="bottom-text">
+                            Paint bucket
+                        </div>
+                    </div>
+                    <div class="bottom-list__item">
+                        <div class="bottom-icon">
+                            <img src="./assets/icons/Vector2.png" alt="Choose color">
+                        </div>
+                        <div class="bottom-text">
+                            Choose color
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="bottom-list__item">
+                        <div class="bottom-icon">
+                            <img src="./assets/icons/Vector3.png" alt="Move">
+                        </div>
+                        <div class="bottom-text">
+                            Move
+                        </div>
+                    </div>
+                    <div class="bottom-list__item">
+                        <div class="bottom-icon">
+                            <img src="./assets/icons/Vector4.png" alt="Transform">
+                        </div>
+                        <div class="bottom-text">
+                            Transform
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="color-list">
+                    <div class="color-list__item">
+                        <div class="color-icon">
+                            <img src="./assets/icons/GreyEllipse.png" alt="Grey">
+                        </div>
+                        <div class="color-text">
+                            Current color
+                        </div>
+                    </div>
+                    <div class="color-list__item">
+                        <div class="color-icon">
+                            <img src="./assets/icons/GreenEllipse.png" alt="Green">
+                        </div>
+                        <div class="color-text">
+                            Prev color
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="color-list__item">
+                        <div class="color-icon">
+                            <img src="./assets/icons/RedEllipse.png" alt="Red">
+                        </div>
+                        <div class="color-text">
+                            Red
+                        </div>
+                    </div>
+                    <div class="color-list__item">
+                        <div class="color-icon">
+                            <img src="./assets/icons/BlueEllipse.png" alt="Blue">
+                        </div>
+                        <div class="color-text">
+                            Blue
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <section class="canvas-container">
+                <canvas class="canvas" id="canvas" width="512" height="512"></canvas>
+            </section>
+            <section class="size-switchers-container">
+                <div class="sheet">
+                  <ul class="sheet__list">
+                    <li  class="size-switcher sheet__size-switcher" id="size4">
+                      <img src="./assets/icons/tick.svg" alt="tick" class="size-switcher__icon">
+                      <span class="size-switcher__name">4x4</span>
+                    </li>
+                    <li  class="size-switcher sheet__size-switcher" id="size32">
+                      <img src="./assets/icons/tick.svg" alt="tick" class="size-switcher__icon">
+                      <span class="size-switcher__name">32x32</span>
+                    </li>
+                    <li  class="size-switcher sheet__size-switcher" id="size256">
+                      <img src="./assets/icons/tick.svg" alt="tick" class="size-switcher__icon">
+                      <span class="size-switcher__name">256x256</span>
+                    </li>
+                  </ul>
+                </div>
+              </section>
+        </div>
+    </main>
+    <img src="./assets/image.png" class="image" alt="image" id="img" style="display: none;">
+    <script src="script.js"></script> 
+</body>
+</html>
